@@ -1,4 +1,4 @@
-import { AuthorizerServer } from './AuthorizerServer';
+import { AuthorizerServer } from "./authorizerServer";
 
 let app = new AuthorizerServer().app;
 

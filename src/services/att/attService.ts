@@ -1,6 +1,6 @@
-import { RepositoryATT } from '../Repository/RepositoryATT';
-import { InputParameters } from '../Domain/ATT/InputParameters';
-import { OutputParameters } from '../Domain/ATT/OutputParameters';
+import { RepositoryATT } from '../../repository/RepositoryATT';
+import { InputParameters } from './model/InputParameters';
+import { OutputParameters } from './model/OutputParameters';
 
 export class AttService {
     private _repositoryATT: RepositoryATT;
@@ -15,15 +15,15 @@ export class AttService {
         try {
             const result = await this._repositoryATT.call(inputParameters);
 
-            outputParameters.errorCode = result.CodigoErro;
-            outputParameters.errorMessage = result.MensagemErro;
-            outputParameters.error = false;
+            outputParameters.ErrorCode = result.CodigoErro;
+            outputParameters.ErrorMessage = result.MensagemErro;
+            outputParameters.Error = false;
             return outputParameters;
         }catch (err) {
             console.error(`error 'proccessCall': ${err}`);
-            outputParameters.errorCode = -1;
-            outputParameters.errorMessage = err;
-            outputParameters.error = true;            
+            outputParameters.ErrorCode = -1;
+            outputParameters.ErrorMessage = err;
+            outputParameters.Error = true;            
             return outputParameters;
         }
     }

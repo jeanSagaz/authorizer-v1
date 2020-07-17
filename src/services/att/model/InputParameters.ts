@@ -1,5 +1,4 @@
-export class InputParameters
-{
+export class InputParameters {
     /// <summary>
     /// ctanum_deb 
     /// </summary>

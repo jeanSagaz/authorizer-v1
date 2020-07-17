@@ -1,5 +1,5 @@
-import { InputParameters } from "./InputParameters";
-import { OutputParameters } from "./OutputParameters";
+import { InputParameters } from '../../services/att/model/InputParameters';
+import { OutputParameters } from '../../services/att/model/OutputParameters';
 
 export class ProcCcoStpEnvMovCartao {
     inputParameters: InputParameters;

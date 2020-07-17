@@ -1,4 +1,4 @@
-import { InputParameters } from '../Domain/ATT/InputParameters';
+import { InputParameters } from '../services/att/model/InputParameters';
 
 import * as sql from 'mssql';
 
