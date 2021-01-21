@@ -18,7 +18,7 @@
     "iso8583-js": "^1.2.2",
     "mssql": "^6.2.0",
     "net": "^1.0.2",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "tedious": "^8.3.0",
     "ts-node-dev": "^1.0.0-pre.50",
     "typescript": "^3.9.6"
